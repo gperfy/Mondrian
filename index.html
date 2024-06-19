@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+            /* 
+    Write your CSS here 
+    Line Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: burlywood;
+    }
+
+        .conteiner{
+            padding: 0;
+            margin: 0;
+            height: 580px;
+            width: 550px;
+            display: grid;
+            grid-template-rows: 200px 200px 80px 100px;
+            grid-template-columns: 200px 200px 100px 50px;
+            background-color: #232629;
+        }
+
+        .item{
+            font-size: 30px;
+        }
+
+        .uno{
+            background-color: #F0F1EC;
+            border-bottom: 15px solid black;
+        }
+
+        .due{
+            grid-column: span 3;
+            grid-row: span 2;
+            background-color: #E72F24;
+            border-bottom: 15px solid black;
+            border-left: 10px solid black;
+        }
+
+        .tre{
+            background-color: #F0F1EC;
+            border-bottom: 15px solid black;
+        }
+
+        .quattro{
+            grid-row: span 2;
+            background-color: #004592;
+            
+        }
+
+        .cinque{
+            grid-column: span 2;
+            grid-row: span 2;
+            background-color: #F0F1EC;
+            border-right: 5px solid;
+            border-left: 10px solid black;
+            border-right: 15px solid black;
+        }
+
+        .sei{
+            background-color: #232629;
+        }
+
+        .sette{
+            grid-area: 4/4/5/5;
+            background-color: #F9D01E;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item uno"></div>
+        <div class="item due"></div>
+        <div class="item tre"></div>
+        <div class="item quattro"></div>
+        <div class="item cinque"></div>
+        <div class="item sei"></div>
+        <div class="item sette"></div>
+    </div>
+</body>
+</html>
